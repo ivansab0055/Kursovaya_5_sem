@@ -1,0 +1,274 @@
+/* Basic setup */
+body, html {
+    overflow-x: hidden;
+    line-height: 1.5;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.home-container {
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Video Background */
+.video-background {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    overflow: hidden;
+    background-color: #000; /* Fallback color */
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #e8e8e8;
+    text-align: center;
+    z-index: 2;
+    padding: 0 20px; /* Add some padding for smaller screens */
+}
+
+.overlay-text h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.overlay-text p {
+    font-size: 1.5rem;
+}
+
+.scroll-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Content Section */
+.content-section {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+/* Sections */
+.why-section {
+    background-color: white;
+    padding: 40px;
+    text-align: left;
+    border-left: 5px solid #4CAF50;
+}
+
+.why-section h2 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.why-section p {
+    font-size: 1rem;
+    color: #666;
+    text-align: justify;
+}
+
+.join-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.skills-section {
+    padding: 40px 0;
+    background-color: white;
+}
+
+.skills-section h2 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1 1 calc(30% - 20px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.green-card {
+    background-color: #e0f7df;
+}
+
+.light-green-card {
+    background-color: #f0f9f0;
+}
+
+.yellow-card {
+    background-color: #fff9db;
+}
+
+.card h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #4CAF50;
+}
+
+.card p {
+    margin-bottom: 0;
+    color: #555;
+    text-align: justify;
+}
+
+/* News Section */
+.news-section {
+    background-color: #eef7e9;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap; /* Ensure elements wrap correctly */
+    gap: 10px; /* Add some space between the elements */
+}
+
+.news-section p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+}
+
+.email-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    min-width: 150px;
+    max-width: 350px;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.subscribe-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    flex: 0;
+}
+
+.note {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 10px; /* Adds space above the note */
+    flex-basis: 100%; /* Ensures the note takes the full width */
+    text-align: center;
+}
+
+/* Mobile Version */
+@media only screen and (max-width: 768px) {
+    .content-section {
+        width: 90%;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+
+    .video-background {
+        height: auto; /* Убираем фиксированное соотношение сторон */
+    }
+
+    .background-video {
+        position: relative; /* Изменяем позиционирование на относительное */
+        width: 100%; /* Видео будет занимать всю ширину экрана */
+        height: auto; /* Высота будет подстраиваться автоматически */
+    }
+
+    .overlay-text {
+        width: 80%; /* Увеличиваем ширину текста до 80% от ширины экрана */
+        max-width: 500px; /* Максимальная ширина текста */
+        padding: 0 10px; /* Уменьшаем отступы */
+    }
+
+    .overlay-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .overlay-text p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .overlay-text {
+        width: 90%; /* Увеличиваем ширину текста до 90% от ширины экрана */
+        max-width: 400px; /* Максимальная ширина текста */
+        padding: 0 10px; /* Уменьшаем отступы */
+    }
+
+    .overlay-text h1 {
+        font-size: 1.2rem;
+    }
+
+    .overlay-text p {
+        font-size: 1rem;
+    }
+
+    .video-background {
+        height: auto; /* Убираем фиксированное соотношение сторон */
+    }
+
+    .background-video {
+        position: relative; /* Изменяем позиционирование на относительное */
+        width: 100%; /* Видео будет занимать всю ширину экрана */
+        height: auto; /* Высота будет подстраиваться автоматически */
+    }
+}

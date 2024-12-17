@@ -1,0 +1,11 @@
+Dear, Tester/Dear, Tester/Дорогой Тестировщик
+
+We send to you this test email to check, how mail service work/Мы отправляем вам это тестовое электронное письмо, чтобы проверить, как работает почтовый сервис:
+
+{{ url }}
+
+If you not a tester ignore this message/Если вы не тестировщик, проигнорируйте это сообщение.
+
+Sincerely/Искренне
+
+Kallosus Support Team

@@ -1,0 +1,157 @@
+.main{
+    min-width: 90%;
+}
+
+.dropzone {
+    width: 100%;
+    border-width: 2px;
+    border-color: #4CAF50; /* Color to match the logo */
+    border-style: dashed;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    margin: 0; /* Center the dropzone */
+    background-color: #fefefe; /* Light background */
+    transition: min-height 0.3s ease;
+    display: flex; /* Added for centering text */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack children vertically */
+}
+
+.placeholder {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Take up the entire height of the container */
+}
+
+.placeholder-image {
+    width: 50px; /* Adjust size as needed */
+    margin-bottom: 10px;
+}
+
+.preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center previews */
+    margin-top: 20px;
+}
+
+.preview {
+    width: 120px;
+    margin: 10px;
+    position: relative; /* For positioning the remove button */
+}
+
+.preview video {
+    width: 100%;
+}
+
+.preview p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.remove-button {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+    background: white;
+    border: none;
+    color: black;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.remove-button:hover {
+    background: red;
+    color: white;
+}
+
+.upload-button {
+    width: 50%;
+    justify-content: center;
+
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack children vertically */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Color to match the logo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Необходимо для центрирования */
+    min-width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+
+.upload-button:hover {
+    background-color: #45a049; /* Dark green on hover */
+}
+.dropzone {
+    width: 80%;
+
+    border-width: 2px;
+    border-color: #4CAF50; /* Color to match the logo */
+    border-style: dashed;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #fefefe; /* Light background */
+    transition: min-height 0.3s ease;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack children vertically */
+    margin: 0 auto; /* Center the dropzone horizontally */
+}
+
+.upload-button {
+    width: 100%; /* Take full width of the dropzone */
+    max-width: 300px; /* Set a maximum width for the button */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0 auto; /* Center the button horizontally and add margin to the top */
+    transition: background-color 0.3s ease;
+    min-width: 200px;
+}
+
+.upload-button:hover {
+    background-color: #45a049; /* Dark green on hover */
+}
+
+.preview-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; /* Center the preview container */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}

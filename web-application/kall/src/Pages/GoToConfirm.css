@@ -1,0 +1,16 @@
+.confirmation-message {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.confirmation-message h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.confirmation-message p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 20px;
+}

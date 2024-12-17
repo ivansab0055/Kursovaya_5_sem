@@ -1,0 +1,37 @@
+# Игнорируем файлы и директории, которые не нужны в Docker-контейнере
+
+# Игнорируем директории сборки
+node_modules/
+bower_components/
+target/
+dist/
+build/
+
+# Игнорируем логи и временные файлы
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+*.pid
+
+# Игнорируем конфиденциальные файлы и конфигурации
+.env.local
+.env.*.local
+
+# Игнорируем Git-репозиторий
+.git/
+.gitignore
+.gitattributes
+
+# Игнорируем IDE и редактор конфигурации
+.idea/
+.vscode/
+*.iml
+*.sublime*
+
+# Игнорируем тестовые файлы и результаты тестов
+coverage/
+*.test.js
+*.spec.js
+__pycache__/

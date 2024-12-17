@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: Dzimaa, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: Dzimaa, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+/* https://alessiolaiso.com/aleo-font */
+@font-face {
+  font-family: 'Aleo';
+  src: local('Astro'), url(./fonts/Aleo_v2.0/otf/Aleo-ExtraBold.otf) format('opentype');
+  font-weight: 900;
+}

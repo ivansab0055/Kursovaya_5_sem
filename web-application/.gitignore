@@ -1,0 +1,79 @@
+# Byte-compiled
+__pycache__
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Files backup
+~*
+~$*
+*.bak
+
+# Distribution / packaging
+.Python
+lib
+lib64
+parts
+sdist
+var
+wheels
+pip-wheel-metadata
+share/python-wheels
+develop-eggs
+eggs
+.eggs
+*.egg-info
+*.egg
+MANIFEST
+.installed.cfg
+downloads
+docs/_build
+build
+dist
+bin
+.buildozer
+
+# Logs
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
+logs/
+
+# Editors
+.vscode
+.ipynb_checkpoints
+*.swp
+# PyCharm
+.idea/
+!/.idea/*.iml
+!/.idea/modules.xml
+!/.idea/vcs.xml
+!/.idea/runConfigurations
+node_modules/*
+
+# Environments
+venv
+.venv
+env
+.python-version
+
+# Temp / Cache
+cache
+.cache
+temp
+.temp
+.pytest_cache
+.coverage
+
+# Project
+src/datasets/
+
+*.tar
+*.tar.gz
+*.h5
+*.pkl
+*.record
+test.py
+kall/test.js

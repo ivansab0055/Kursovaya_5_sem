@@ -1,0 +1,92 @@
+/* Common container styling for the documents page */
+.documents-container {
+    width: 350px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Document title styling */
+.documents-container h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Styling for document list */
+.document-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual document item */
+.document-list li {
+    margin-bottom: 15px;
+}
+
+/* Link styling for downloadable documents */
+.document-list a {
+    display: inline-block;
+    color: #4c844d;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* Hover effect for document links */
+.document-list a:hover {
+    color: #387039;
+    text-decoration: underline;
+}
+
+.documents-container ul{
+    display: grid;
+}
+
+/* Button for navigating back to settings or home */
+.back-button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #4c844d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+/* Button hover effect */
+.back-button:hover {
+    background-color: #387039;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 480px) {
+    .documents-container {
+        width: 80%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .document-list a {
+        font-size: 14px;
+    }
+
+    .back-button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
